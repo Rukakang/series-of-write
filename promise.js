@@ -41,7 +41,7 @@ function MyPromise(executor) {
 MyPromise.prototype.then = function (onFulfilled, onRejected) {
   if (typeof onFulfilled != 'function') {
     onFulfilled = function (value) {
-      return value;
+      return value;  
     };
   }
   if (typeof onRejected != 'function') {
