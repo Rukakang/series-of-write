@@ -50,6 +50,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
     };
   }
   const promise2 = new MyPromise((resolve, reject) => {
+      console.log(this.state);
     switch (this.state) {
       case FULFILLED:
         setTimeout(() => {
@@ -176,3 +177,19 @@ MyPromise.race = function (promises) {
     }
   });
 };
+
+let p =new MyPromise((resolve,reject)=>{
+    if(Math.random()>0.5){
+        resolve("大")
+    }else{
+        reject("小")
+    }
+})
+
+p.then((data)=>{
+    console.log("resolve");
+    console.log(data);
+},(err)=>{
+    console.log("reject");
+    console.log(err);
+})

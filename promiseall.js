@@ -31,6 +31,7 @@ function mockFetch(param) {
     }
     // 全部请求完成的回调
     Promise.all(pool).then(() => {
+        console.log(pool);
       console.log('请求已经全部结束');
     });
   }
