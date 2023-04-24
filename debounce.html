@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text">
+    <script>
+        // 触发事件时，在--定时同内，若没有再次触发事件,则事件处理函数在时间到达时执行一次
+        //若在一定时间内，又触发事件，则清除上次的计时，重新开始计时，直到时间到了再执行函数
+        // /应用，输入框校验，百度搜索出现提示文字功能等，窗口放大缩小，登录，按钮多次点击发送请l
+        let input = document.querySelector("input");
+        input.addEventListener('input',debounce(function (){
+            console.log(this)
+            console.log(this.value)
+        },3000))
+        function debounce(fn,delay){
+            console.log("jinl");
+            let time = null;
+            return function (){
+                clearTimeout(time);
+                time=setTimeout(()=>{
+                    fn.call(this)//利用call,将this的指针由window指向input
+                },delay)
+            }
+        }
+    </script>
+
+</body>
+</html>

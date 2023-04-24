@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //节流
+    //限制事件被频繁触发。不管怎么触发，在一定时间内，只执行一次
+    //应用:获取拖拽盒于位置、scroll微动条等位置
+    //另一个版本
+    function throttle(fn,delay){
+        let flag = true;
+        return function(){
+            flag = false;
+            setTimeout(()=>{
+                flag = true
+            },delay)
+        }
+    }
+    function throttle(fn, delay){
+        var starttime = 0;
+        return function (){
+            var nowtime = Date.now()
+            if(nowtime - starttime > delay){
+                fn.call(document)
+                starttime = nowtime
+            }
+        }
+    }
+    document.onmousemove = throttle(function (){
+        console.log(Math.random())
+        console.log(this)
+    },3000)
+</script>
+</body>
+</html>

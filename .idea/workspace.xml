@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2b83605-37df-456a-b5d5-a2a6b94229ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/promise1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debounce.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/throttle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -57,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679827157355</updated>
       <workItem from="1679827158516" duration="106000" />
+      <workItem from="1681140719977" duration="4590000" />
     </task>
     <servers />
   </component>
@@ -73,5 +78,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1682341194533">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1682341194533" />
   </component>
 </project>
